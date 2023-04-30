@@ -1,0 +1,39 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  font-family: "chillax", sans-serif;
+  font-weight: 500;
+  width: 200px;
+  display: flex;
+  /* border: 1px solid black; */
+  justify-content: space-around;
+  align-items: center;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+
+.git {
+  scale: 1.3;
+  filter: invert();
+}
+
+.twi {
+  scale: 1.1;
+}
+
+.logo {
+  margin-left: -3px;
+  scale: 2.1;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}

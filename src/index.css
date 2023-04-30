@@ -1,0 +1,6 @@
+@import url(https://api.fontshare.com/v2/css?f[]=chillax@400,500&display=swap);
+
+body {
+  background-image: url(./assets/blob-scene-haikei.svg);
+  /* overflow: hidden; */
+}
