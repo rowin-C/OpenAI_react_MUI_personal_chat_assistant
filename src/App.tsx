@@ -109,7 +109,7 @@ function App() {
           }}
         >
           <img
-            src="src\assets\bot.png"
+            src="/assets/bot.png"
             alt="picture of a bot"
             style={{
               height: "40vh",
