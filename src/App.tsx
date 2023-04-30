@@ -9,6 +9,8 @@ function App() {
     import.meta.env.VITE_SUPA_KEY
   );
 
+  //some comment
+
   let val = "";
 
   async function askQuestion() {
