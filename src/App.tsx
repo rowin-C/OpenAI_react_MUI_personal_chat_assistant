@@ -14,13 +14,13 @@ function App() {
   let val = "";
 
   async function askQuestion() {
+    alert("Open AI token Expired, so it currently doesn't work");
     const { data, error } = await supabaseClient.functions.invoke(
       "ask-custom-data",
       {
         body: JSON.stringify({ query: val }),
       }
     );
-    console.log(data);
     console.log(error);
     const answer = document.querySelector("#reply") as HTMLElement;
     answer.innerHTML = data.text;
@@ -28,6 +28,19 @@ function App() {
 
   return (
     <Container>
+      <div
+        className="expire"
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          margin: "1rem 0 0 0",
+          color: "red",
+          fontWeight: "bold",
+          fontSize: "1.5rem",
+        }}
+      >
+        Token_Expired , I'll be getting a paid account shortly
+      </div>
       <div
         className="main"
         style={{
